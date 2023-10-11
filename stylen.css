@@ -1,0 +1,212 @@
+
+:root {
+    --primary-color:#ff4757;
+    --white-clor:#ffffff;
+    --light-clor:#f1f2f6;
+    --text-light-clor:#747d8c;
+    --text-drak-clor:#2f3542;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*,::before,::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text-drak-clor);
+    background:  linear-gradient(to right , #0f0c29 ,#302c29,#24243e);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    -wedkit-tap-highlight-color:transparent;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul {
+    list-style: none;
+}
+h1,h2 {
+    font-weight: 500;
+    line-height: normal;
+}
+h1 {
+    font-size: 26px;
+}
+h2 {
+    font-size: 20px;
+}
+.site {
+    display: flex;
+    align-items: center;
+    height: 100vh ;
+}
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding:  0 30px;
+}
+.card {
+    max-width: 320px;
+    height: 600px;
+    background-color: var(--white-clor);
+    border-radius: 10px;
+    box-shadow: rgb(255 255 255 / 20%) 0 0 0 8px ;
+    margin:  0 auto;
+    overflow: hidden;
+}
+.card .head {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.head{
+    height: 225px;
+}
+.card .head .blur , .card .head .blur::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.thumbnail {
+    border-radius: 50%;
+}
+.card .head .blur::before {
+    content: '';
+    background-color: var(--primary-color);
+    border-radius: 0 0 65% 30%;
+}
+.card .thumbnail {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-bottom: 50%;
+    box-shadow: rgb(0 0 0 / 20%) 0 8px 20px;
+    overflow: hidden;
+}
+.card .thumbnail img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.card .meta {
+    position: relative;
+    color: var(--white-clor);
+}
+.card .meta p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+.card .main > div:not(.button) {
+    padding: 10px 20px;
+    margin-top:  10px;
+}
+.card .brief p {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.card .brief strong {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.card .brief p {
+    color: var(--text-light-clor);
+}
+.card :where(.socials ul, .button) {
+    display: flex;
+    justify-content: center;
+}
+.card .socials a {
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    margin: 0 5px;
+    transition: background-coloe .3s , color .3s;
+}
+li{
+    background-color: var(--light-color);
+    text-align: center;
+    border-radius: 50%;
+}
+.card .socials a:hover {
+    background-color: var(--primary-color);
+    color: var(--white-clor);
+}
+.card .completed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    line-height: normal;
+}
+.card .completed strong {
+    font-size: 26px;
+    letter-spacing: -2px;
+}
+.card .completed span {
+    font-size: 12px;
+    color:  var(--text-drak-color);
+}
+.card .button a{
+position: relative;
+width: 120px;
+height: 36px;
+padding: 5px 32px;
+margin: auto auto 0;
+background-color: var(--primary-color);
+border-radius: 10px 10px 0 0;
+}
+.card .button a span {
+    position: relative;
+    bottom: 0;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+}
+.card .button a span:first-child {
+    left: -18px;
+}
+.card .button a span:last-child {
+    right: -18px;
+}
+.card .button a span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide-active .card .blur {
+    background-size: cover;
+    background-position: bottom;
+    filter: blur(40px);
+}
+.swiper-slide-active .card .hadid .blur {
+   background-image: url(image/z3989977146758_9741ceca67de4e92334d1b62e22518ff\ \(1\).jpg);
+}
+.swiper-slide-active .card .sarah .blur {
+    background-image: url(image/z3989977146758_9741ceca67de4e92334d1b62e22518ff\ \(1\).jpg);
+ }
+ .swiper-slide-active .card .farah .blur {
+    background-image: url(image/z3989977146758_9741ceca67de4e92334d1b62e22518ff\ \(1\).jpg);
+ }
