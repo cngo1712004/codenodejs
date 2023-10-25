@@ -139,7 +139,7 @@ h2 {
     height: 32px;
     padding: 10px;
     margin: 0 5px;
-    transition: background-coloe .3s , color .3s;
+    transition: background-coloe .2s , color .2s;
 }
 li{
     background-color: var(--light-color);
@@ -210,3 +210,40 @@ border-radius: 10px 10px 0 0;
  .swiper-slide-active .card .farah .blur {
     background-image: url(image/z3989977146758_9741ceca67de4e92334d1b62e22518ff\ \(1\).jpg);
  }
+
+
+ /*cart*/
+.body-cart{
+    background: #ffffff;
+}
+.table{
+    align-items: center;
+}
+.color-menu{
+    background: rgb(228, 134, 57);
+    color: #f1f2f6;
+    text-align: center;
+}
+.table-item {
+    text-align: center;
+    height: 50px;
+    align-items: center;
+}
+.b1{
+    color: #747d8c;
+}
+.div {
+    color: #f1f2f1;
+    background: rgb(228, 134, 57);
+    font-weight: bold;
+}
+.b4{
+    background: #0f0c29;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.commen1 {
+    width: 40%;
+    height: 170px;
+}
